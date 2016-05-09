@@ -1,0 +1,8 @@
+create table appdata.courts (
+  id integer constraint courts_pk primary key,
+  state_id varchar(2) not null,
+  name varchar(50) not null,
+  constraint courts_states_fk foreign key (state_id) references appdata.states (id)
+);
+  
+create index courts_idx01 on appdata.courts (state_id);

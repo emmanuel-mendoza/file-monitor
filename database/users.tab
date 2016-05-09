@@ -1,0 +1,8 @@
+create table appdata.users (
+   id    integer constraint users_pk primary key,
+   email varchar(80) not null constraint users_udx1 unique,
+   first_name varchar(50) not null,
+   last_name  varchar(50) not null,
+   pwd        varchar(50) not null
+   
+);

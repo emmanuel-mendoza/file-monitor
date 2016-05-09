@@ -1,0 +1,14 @@
+create table appdata.files (
+  id integer constraint files_pk primary key,
+  user_id integer not null,
+  court_id integer not null,
+  name varchar(50) not null,
+  description varchar(200) not null,
+  monitor varchar(1) not null,
+  constraint files_users_fk foreign key (user_id) references appdata.users (id),
+  constraint files_courts_fk foreign key (court_id) references appdata.courts (id)
+  );
+  
+  create unique index files_udx01 on appdata.files (user_id, court_id, name);
+  
+  create index files_idx01 on appdata.files (court_id);

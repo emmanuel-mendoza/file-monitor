@@ -1,0 +1,4 @@
+create table appdata.states (
+   id   varchar(2) constraint states_pk primary key,
+   name varchar(50)
+);
