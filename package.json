@@ -1,0 +1,23 @@
+{
+  "name": "file-monitor",
+  "description": "File monitor",
+  "version": "0.0.1",
+  "private": "true",
+  "author": "Emmanuel Mendoza & Jorge Herrera",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/emmanuel-mendoza/file-monitor.git"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "4.4.x",
+    "npm": "2.14.x"
+  },
+  "dependencies": {
+    "express": "^4.13.4",
+    "gulp-cli": "~1.2.1"
+  }
+}

@@ -1,0 +1,26 @@
+delete from appdata.files;
+delete from appdata.courts;
+delete from appdata.states; 
+delete from appdata.users;
+
+insert into appdata.users (id, email, first_name, last_name, pwd) 
+       values (1, 'emmanuel.mendoza.sanchez@gmail.com', 'Emmanuel', 'Mendoza','123abc');
+insert into appdata.users (id, email, first_name, last_name, pwd) 
+       values (2, 'jorge.herrera.cabrera@gmail.com', 'Jorge', 'Herrera','123abc');
+       
+insert into appdata.states (id, name) values ('YN', 'Yucatan');
+insert into appdata.states (id, name) values ('QR', 'Quintana Roo');
+insert into appdata.states (id, name) values ('FD', 'Federal');
+
+insert into appdata.courts (id, state_id, name) values (1, 'YN', 'Court YN 1');
+insert into appdata.courts (id, state_id, name) values (2, 'YN', 'Court YN 2');
+insert into appdata.courts (id, state_id, name) values (3, 'FD', 'Court FD 1');
+
+insert into appdata.files (id, user_id, court_id, name, description, monitor)
+       values (1, 1, 1, 'File1', 'File1','Y');
+insert into appdata.files (id, user_id, court_id, name, description, monitor)
+       values (2, 1, 3, 'File2', 'File2','Y');
+insert into appdata.files (id, user_id, court_id, name, description, monitor)
+       values (3, 2, 1, 'File1', 'File1','N');
+insert into appdata.files (id, user_id, court_id, name, description, monitor)
+       values (4, 1, 2, 'File3', 'File3','Y');
