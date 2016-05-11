@@ -18,6 +18,7 @@
   },
   "dependencies": {
     "express": "^4.13.4",
-    "gulp-cli": "~1.2.1"
+    "gulp-cli": "~1.2.1",
+    "massive": "^2.2.0"
   }
 }

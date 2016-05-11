@@ -1,0 +1,1 @@
+select * from appdata.users where email = $1
